@@ -1,5 +1,5 @@
 import React from "react";
-import Image1 from "./images/logo1.png"
+import Image1 from "./images/logo.png"
 
 export default function BackgroundAll () {
     return (

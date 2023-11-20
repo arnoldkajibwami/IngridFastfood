@@ -4,7 +4,7 @@ import './navbar.css'
 import { BiLogoInstagram } from "react-icons/bi"
 import { BiLogoFacebook } from "react-icons/bi"
 import { BiLogoTwitter } from "react-icons/bi"
-import Brandlogo from "./images/logo1.png"
+import Brandlogo from "./images/logo.png"
 import { Button } from 'react-bootstrap'
 
 
@@ -23,7 +23,7 @@ const Header = () => {
         <div className='container '>
           <div className=" Navcontainer">
             <div className="logo d-flex">
-              <img style={{ height: "30px", width: "30px", borderRadius: "259px", marginRight: "5px" }} src={Brandlogo} alt='logo' />
+              <img style={{ height: "30px", width: "30px", borderRadius: "259px", marginRight: "5px", background:"#f1f2f3"}} src={Brandlogo} alt='logo' />
               <Link to="/" style={{ textDecoration: "none", color: "white" }}><h4 style={{ color: "white" }}>Ingrid Fast Food</h4></Link>
             </div>
             <div className="menu-icon" onClick={handleShowNavbar}>
@@ -49,9 +49,7 @@ const Header = () => {
                 <li>
                   <NavLink to="/map">Map</NavLink>
                 </li>
-                {/* <li>
-                <NavLink to="/contact">Contact</NavLink>
-              </li> */}
+                
                 <hr />
                 <div className='tonone'>
                   <li id='socialnet'>
