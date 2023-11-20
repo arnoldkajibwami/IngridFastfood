@@ -3,7 +3,13 @@ import Image2 from "./images/f2.png"
 import Image3 from "./images/f3.png"
 import Image4 from "./images/f4.png"
 import Image5 from "./images/f5.png"
+<<<<<<< HEAD
 
+=======
+import Image6 from "./images/f6.png"
+import Image7 from "./images/f7.png"
+import Image8 from "./images/f8.png"
+>>>>>>> 92f93e2be034cbe2512dc895ef8c007ead9b5843
 
 const Data = 
 [
