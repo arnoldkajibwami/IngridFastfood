@@ -1,4 +1,4 @@
-duimport Image1 from "./images/f1.png"
+import Image1 from "./images/f1.png"
 import Image2 from "./images/f2.png"
 import Image3 from "./images/f3.png"
 import Image4 from "./images/f4.png"
