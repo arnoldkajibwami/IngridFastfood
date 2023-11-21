@@ -23,7 +23,7 @@ const Header = () => {
         <div className='container '>
           <div className=" Navcontainer">
             <div className="logo d-flex">
-              <img style={{ height: "30px", width: "30px", borderRadius: "259px", marginRight: "5px", background:"#f1f2f3"}} src={Brandlogo} alt='logo' />
+              <img style={{ height: "30px", width: "30px", borderRadius: "259px", marginRight: "5px", background: "#f1f2f3" }} src={Brandlogo} alt='logo' />
               <Link to="/" style={{ textDecoration: "none", color: "white" }}><h4 style={{ color: "white" }}>Ingrid Fast Food</h4></Link>
             </div>
             <div className="menu-icon" onClick={handleShowNavbar}>
@@ -46,10 +46,10 @@ const Header = () => {
                 <li>
                   <NavLink to="/menu">Menu</NavLink>
                 </li>
-                <li>
+                {/* <li>
                   <NavLink to="/map">Map</NavLink>
-                </li>
-                
+                </li> */}
+
                 <hr />
                 <div className='tonone'>
                   <li id='socialnet'>
@@ -57,8 +57,8 @@ const Header = () => {
                     <i className='socialnetwork'><BiLogoFacebook /></i>
                     <i className='socialnetwork'><BiLogoTwitter /></i>
                   </li>
-                  <button className='buttonorange' style={{ marginLeft: "15px" }}>
-                    <NavLink to="contact" style={{ textDecoration: "none", color:"white" }}>Order Online</NavLink>
+                  <button className='buttonorange'id="buttonid" style={{ marginLeft: "15px" }}>
+                    <NavLink  to="contact" style={{ textDecoration: "none", color: "white"}}>Order Online</NavLink>
                   </button>
 
                 </div>
@@ -73,7 +73,7 @@ const Header = () => {
                 <i className='socialnetwork'><BiLogoFacebook /></i>
                 <i className='socialnetwork'><BiLogoTwitter /></i>
                 <button className='buttonorange' style={{ marginLeft: "15px" }}>
-                  <NavLink to="contact" style={{ textDecoration: "none", color:"white" }}>Order Online</NavLink>
+                  <NavLink  to="contact" style={{ textDecoration: "none", color: "white" }}>Order Online</NavLink>
                 </button>
               </div>
 

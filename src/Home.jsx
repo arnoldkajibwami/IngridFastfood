@@ -7,9 +7,10 @@ import Specialities from './Specialities';
 import { NavLink } from 'react-router-dom';
 import BackToTOP from './Backontop';
 import { useNavigate } from 'react-router-dom';
+import WhatsappPop from './WhatsappPop';
 
 export default function Home() {
-    
+
     const navigate = useNavigate()
     function BackToTOP() {
         window.scrollTo(0, 0)
@@ -19,7 +20,7 @@ export default function Home() {
     return (
         <>
             <BackgroundAll />
-
+            <WhatsappPop />
             {/* Special Offers*/}
             <div class="offer_section layout_padding-bottom">
                 <div class="offer_container">
@@ -32,12 +33,12 @@ export default function Home() {
                                     </div>
                                     <div class="detail-box">
                                         <h5>
-                                            Pizza Day on  <br/>Friday
+                                            Pizza Day on  <br />Friday
                                         </h5>
                                         <h6>
                                             <span>20%</span> Off
                                         </h6>
-                                        <a href="">
+                                        <a href="/contact">
                                             Order Now
                                         </a>
                                     </div>
@@ -55,7 +56,7 @@ export default function Home() {
                                         <h6>
                                             <span>15%</span> Off
                                         </h6>
-                                        <a href="">
+                                        <a href="/contact">
                                             Order Now
                                         </a>
                                     </div>
@@ -76,7 +77,7 @@ export default function Home() {
 
             <div className='d-flex justify-content-center mt-3 mb-5'>
                 <button className="buttonorange">
-                    <NavLink to="/menu"  style={{ textDecoration: "none", color:"white"}}>Go To Our Menu</NavLink>
+                    <NavLink to="/menu" style={{ textDecoration: "none", color: "white" }}>Go To Our Menu</NavLink>
                 </button>
             </div>
         </>

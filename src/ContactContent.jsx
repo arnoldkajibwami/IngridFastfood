@@ -1,0 +1,88 @@
+import React from "react";
+import ImageContact from "./images/logo.png"
+import './contact.css'
+
+export default function Contactcontent() {
+    return (
+        <>
+            <section id="contact" className="mt-3 contact">
+
+                <div className="container mt-5" data-aos="fade-up" data-aos-delay="100">
+                    <h3 className="text-center mb-5">Order Now</h3>
+
+                    <div className="row gy-4 mb-5">
+                        <div className="col-lg-6 itemRaduis">
+                            <div className="info-item  d-flex flex-column justify-content-center align-items-center">
+                                <i className="bi bi-map"></i>
+                                <h3>Our Address</h3>
+                                <p>DRC/ Bukavu</p>
+                            </div>
+                        </div>
+
+                        <div className="col-lg-3 col-md-6 itemRaduis">
+                            <div className="info-item d-flex flex-column justify-content-center align-items-center">
+                                <i className="bi bi-envelope"></i>
+                                <h3>Email Us</h3>
+                                <p>ingridfastfood@gmail.com</p>
+                            </div>
+                        </div>
+
+                        <div className="col-lg-3 col-md-6 itemRaduis">
+                            <div className="info-item  d-flex flex-column justify-content-center align-items-center">
+                                <i className="bi bi-telephone"></i>
+                                <h3>Call Us</h3>
+                                <p>+243 971 133 807</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div className="row gy-4 mt-1 ">
+
+                        <div className="col-lg-6 img-contact">
+                            <div></div>
+                            <img src={ImageContact} alt="" />
+                            <div></div>
+                        </div>
+
+                        <div className="col-lg-6 " >
+                            <div action="forms/contact.php" method="post" role="form" className="php-email-form">
+                                <div className="col-lg-12 form-group">
+                                    <input type="text" name="name" className="form-control" id="name" placeholder="Your Name" required />
+                                </div>
+                                <div className="col-lg-12 form-group">
+                                    <input type="mail" className="form-control" name="mail" id="email" placeholder="Your Email" required />
+                                </div>
+                                {/* <div className="col-lg-12 form-group">
+                                    <select className="form-groupe-selected" placeholder="select">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                    </select>
+                                </div> */}
+                                <div className="col-lg-12 form-group">
+                                    <input type="text" className="form-control" name="name" id="name" placeholder="Location" required />
+                                </div>
+                                <div className="col-lg-12 form-group">
+                                    <input type="text" className="form-control" name="name" id="name" placeholder="Item Name" required />
+                                </div>
+                                <div className="col-lg-12 form-group">
+                                    <input type="text" className="form-control" name="name" id="name" placeholder="Quantity" required />
+                                </div>
+
+                                <div className="my-3">
+                                    <div className="loading">Loading</div>
+                                    <div className="error-message"></div>
+                                    <div className="sent-message">Your message has been sent. Thank you!</div>
+                                </div>
+                                <div className="text-center"><button className="buttonorange" style={{fontSize:"18px"}}>Order Now</button></div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </section>
+        </>
+    );
+}

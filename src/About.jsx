@@ -1,16 +1,18 @@
 import React from 'react'
 import Image1 from "./images/about-img.png"
+import WhatsappPop from './WhatsappPop';
 
 export default function About() {
     return (
         <>
+            <WhatsappPop />
             <section class="about_section layout_padding">
                 <div class="container">
 
                     <div class="row">
                         <div class="col-md-6 ">
-                            <div class="img-box" style={{marginTop:"85px"}}> 
-                                <img src={Image1} alt=""/>
+                            <div class="img-box" style={{ marginTop: "85px" }}>
+                                <img src={Image1} alt="" />
                             </div>
                         </div>
                         <div class="col-md-6">
@@ -26,7 +28,7 @@ export default function About() {
                                     are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in
                                     the middle of text. All
                                 </p>
-                                
+
                             </div>
                         </div>
                     </div>
