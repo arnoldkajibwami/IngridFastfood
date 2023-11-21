@@ -10,7 +10,6 @@ import Image9 from "./images/f9.png"
 import Image10 from "./images/o1.jpg"
 import Image11 from "./images/o2.jpg"
 import Image12 from "./images/food.jpg"
-import Image13 from "./images/food1.jpg"
 import Image14 from "./images/resto.jpg"
 import Image15 from "./images/drink.jpg"
 
